@@ -17,7 +17,8 @@ class Promotion(db.Model):
 
 @app.route('/')
 def index():
-    return 'こんにちは、世界！今日も未来は明るい。'
+    promotions = Promotion.query.all()
+    return render_template('index.html', promotions=promotions)
 
 
 if __name__ == '__main__':
