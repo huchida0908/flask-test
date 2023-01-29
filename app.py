@@ -13,13 +13,11 @@ class Promotion(db.Model):
     start_date = db.Column(db.Date, nullable=False)
     end_date = db.Column(db.Date, nullable=False)
 
-
-
 @app.route('/')
 def index():
-    promotions = Promotion.query.all()
-    return render_template('index.html', promotions=promotions)
-
+    # promotions = Promotion.query.all()
+    # return render_template('index.html', promotions=promotions)
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()
