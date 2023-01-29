@@ -17,7 +17,7 @@ class Promotion(db.Model):
 def index():
     # promotions = Promotion.query.all()
     # return render_template('index.html', promotions=promotions)
-    return render_template('index.html')
+    return "ffffff"
 
 if __name__ == '__main__':
     app.run()
