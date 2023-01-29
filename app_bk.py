@@ -17,8 +17,9 @@ class Promotion(db.Model):
 
 @app.route('/')
 def index():
-    promotions = Promotion.query.all()
-    return render_template('index.html', promotions=promotions)
+    # promotions = Promotion.query.all()
+    # return render_template('index.html', promotions=promotions)
+    return render_template('index.html')
 
 @app.route('/add', methods=['GET', 'POST'])
 def add_promotion():
